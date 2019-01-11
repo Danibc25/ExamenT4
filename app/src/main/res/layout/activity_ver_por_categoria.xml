@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerPorCategoria">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:paddingRight="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/categoriaSPver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/productoSPver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/vCatNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/vCatNombreEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/vCatDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Descripcion"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/vCatDescripcionEt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:maxLength="50"
+                android:maxLines="3"
+                android:text=""
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/vCatCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Categoria"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/vCatCategoriaEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/vCatPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Precio"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/vCatPrecioEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+
+            //Examen
+
+            <Button
+                android:id="@+id/btnFavorito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añadir a favorito"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
